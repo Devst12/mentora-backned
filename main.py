@@ -8,7 +8,7 @@ class FastAbstractiveSummarizer:
         print("Loading CPU-optimized abstractive model...")
         self.summarizer = pipeline(
             "summarization",
-            model="sshleifer/distilbart-cnn-6-6",  
+            model="sshleifer/distilbart-cnn-12-3",  
             device=-1,  # CPU
             dtype=torch.float32
         )
